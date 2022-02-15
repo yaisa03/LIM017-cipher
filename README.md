@@ -42,8 +42,10 @@ La temática de este proyecto es una web de uso interno para un centro de invest
 ### Boceto
 * Inicialmente se realizo un prototipo a mano, planteando dos paginas: una de inicio de sesion y otra que donde se realiza el descifrado/cifrado.
 * Boceto a mano
+
 ![primer boceto a mano](imagesREADME/aMano.jpg)
 * Boceto en [Figma](https://www.figma.com/file/6tJYVg6wbCUEgQ0mnadUFH/Prototipo-cipher-1?node-id=0%3A1)
+
 ![primer boceto en figma](imagesREADME/Figma.jpg)
 ### Feedback
 * En base al feedback obtenido de profesores universitarios y profesores de centros de idiomas, se cambio la propuesta debido a que esta tenia muchas similaridades a los sistemas intranets que ellos usan y no parecia se un tema muy interante.
@@ -54,7 +56,8 @@ La temática de este proyecto es una web de uso interno para un centro de invest
 * Este proyecto puede ayudar en la proteccion de datos de investigacion, en especial durante la revisión de pares, puede prevenir el robo del manuscrito, la manipulación de contenidos y robo de autoría.
 ### Boceto
 * Para este prototipo se mantuvieron las paginas, pero se modifico el layout de la pagina 2 para que sea mas amigable con el usuario (menos cajas de texto, menos alerts y mas botones).
-Prototipo en [Figma](https://www.figma.com/file/lGrRPxW8fWKQTZM4QYeD5z/Prototipo-cipher-2?node-id=0%3A1)
+* Prototipo en [Figma](https://www.figma.com/file/lGrRPxW8fWKQTZM4QYeD5z/Prototipo-cipher-2?node-id=0%3A1)
+
 ![primer boceto en figma](imagesREADME/Figma1.jpg)
 
 ## Desarrollo
@@ -65,6 +68,7 @@ Ademas, se edito el diseño de la pagina 2:
 - Se agregaron las imagenes y textos de los proyectos.
 - Se redujo la cantidad de text inputs a una caja que recibe el string, una que recibe el offset y un text area donde aparecera el resultado.
 - Se agregaron los botones 'limpiar' y 'Elige otro proyecto'.
+
 Luego se editaron las funciones para que acepten letras minusculas, con este caso hubo un problema al definir la funcion decode, pero nuevamente se logro resolver al colaborar con compañeras que se encontraban realizando el mismo proyecto. Se procedio a hacer que las funciones acepten otros tipos de caracteres.
 Para las pruebas unitarias, el tercer TypeError pudo ser corregido al hacer una condicion que verificara que el valor de la variable 'string' es un String.
 Un dia antes de que cierre el segundo sprint se recibio feedback de companeras, lo cual fue muy util para editar el diseno en CSS y decidir entregar el proyecto.
@@ -74,14 +78,8 @@ Un dia antes de que cierre el segundo sprint se recibio feedback de companeras, 
 * Investigar Cifrado César
 * Plantear el tipo de usuario, de servicio y cómo el programa afecta en el usuario.
 * Boceto a mano y en Figma.
-* Creación de la estructura de la pag 1:
-- HTML.
-- JS.
-- CSS.
-* Creación de la estructura de la pag 2:
-- HTML.
-- JS.
-- CSS.
+* Creación de la estructura de la pag 1: HTML, JS y CSS.
+* Creación de la estructura de la pag 2: HTML, JS y CSS.
 * Empezar funcion encode.
 * Cambio de usuario y tematica.
 * Cambio de diseno: Nuevo boceto en Figma.
@@ -97,7 +95,7 @@ Un dia antes de que cierre el segundo sprint se recibio feedback de companeras, 
 
 
 
-### Instrucciones
+## Instrucciones
 
 1. Inicia Sesion en el sistema (user=usuario1, contraseña=contrasena1).
 2. Selecciona un proyecto, la informacion de algunos estara enciptada y de otros no.
@@ -109,8 +107,10 @@ Un dia antes de que cierre el segundo sprint se recibio feedback de companeras, 
 8. Para ver otro proyecto selecciona el boton 'Elige otro proyecto'.
 9. Para salir da click en el boton 'Cerrar sesion'.
 
+## Vista de la pagina web
 
 ![pag1 de la pag web](imagesREADME/pag1.jpg)
+
 ![pag2 de la pag web](imagesREADME/pag2.jpg)
 
 
