@@ -97,7 +97,7 @@ Un dia antes de que cierre el segundo sprint se recibio feedback de companeras, 
 
 ## Instrucciones
 
-1. Inicia Sesion en el sistema (user=usuario1, contraseña=contrasena1).
+1. Inicia Sesion en el sistema. Donde user=usuario[i], contraseña=contrasena[i], i=0:4.
 2. Selecciona un proyecto, la informacion de algunos estara enciptada y de otros no.
 3. Ingresa el mensaje en el cuadro de texto. Este, permite ingresar mayusculas, minusculas, caracteres especiales, de puntuación y los espacios estan permitidos. 
 4. Ingresa el número de caracteres que deseas desplazar el texto.

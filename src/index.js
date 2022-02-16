@@ -27,26 +27,31 @@ icon2.addEventListener('click', () => {
     contrasena.type = "password";
 });
 
+let login = {
+    users: ['usuario0','usuario1', 'usuario2', 'usuario3','usuario4'],
+    passwords: ['contrasena0','contrasena1', 'contrasena2','contrasena3','contrasena4']
+};
+console.log(Object.keys(login.users).length);
 btn.addEventListener('click', () => { //Acceder //addEventListener(evento, funcion)
-    const message = document.getElementById('mensaje');
-    if (user.value == "") {
-        //alert('Ingresa tu usuario')
-        message.innerText = 'por favor ingresa tu usuario';
-        message.classList.add('error-text');
-    } else if (pswrd.value == "") {
-        //alert('Ingresa tu contrasena')
-        message.innerText = 'por favor ingresa tu contraseña';
-        message.classList.add('error-text');
-    } else if (user.value == "usuario1" && pswrd.value == "contrasena1") {
-        const div = document.getElementById('pag2'); //mostrar pag2 con display
-        div.style.display = '';
-        const div2 = document.getElementById('root'); //ocultar pag1 con display
-        div2.style.display = 'none';
-        message.innerText = '';
-    } else {
-        //alert('El usuario y/o contrasena no son correctos')
-        message.innerText = 'el usuario y/o contrasena no son correctos';
-        message.classList.add('error-text');
+    let message = document.getElementById('mensaje');
+    for (let i = 0; i < Object.keys(login.users).length; i++) {
+        if (user.value == "") {
+            message.innerText = 'por favor ingresa tu usuario';
+            message.classList.add('error-text');
+        } else if (pswrd.value == "") {
+            message.innerText = 'por favor ingresa tu contraseña';
+            message.classList.add('error-text');
+        }else{
+            message.innerText = 'el usuario y/o contrasena no son correctos';
+            message.classList.add('error-text');
+        }
+        if (user.value == login.users[i] && pswrd.value == login.passwords[i]) {
+            const div = document.getElementById('pag2'); //mostrar pag2 con display
+            div.style.display = '';
+            const div2 = document.getElementById('root'); //ocultar pag1 con display
+            div2.style.display = 'none';
+            message.innerText='';
+        }
     }
 });
 
@@ -77,7 +82,6 @@ btn4.addEventListener('click', () => { //Elige otro proyecto
     pView.style.display = 'grid';
     const b4 = document.getElementById('b4');
     b4.style.display = 'none';
-
     const proyect = document.querySelectorAll('figure');
     for (let i = 0; i < proyect.length; i++) {
         proyect[i].style.display = "";
@@ -110,6 +114,7 @@ btn3.addEventListener('click', () => { //cerrar sesion
     }
     icon2.style.display = 'none';
     icon.style.display = '';
+    document.getElementById('mensaje').innerText='';
 });
 
 image1.addEventListener('click', () => {
