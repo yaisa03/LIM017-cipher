@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<header></header>
+
+<body>
+
+  <div id="root">
+    <h1 id="greeting1" class="g1">
+      Inicia sesión </h1> <br><br>
+
+    <form class="form1" id="form1">
+      <input type="text" placeholder="Usuario" id="user"> <br><br>
+
+      <div>
+        <input type="password" placeholder="Contraseña" id="pswrd" style="transform:translateX(10px)" required>
+        <i id="eye" class="fa fa-eye" style="transform:translateX(-15px)"></i>
+        <i id="eyeslash" class="fa fa-eye-slash" style="display: none;transform:translateX(-15px)"></i>
+        <br> <br>
+        <p id="mensaje"></p> <br>
+      </div>
+
+      <input type="button" id="btn" value="Acceder"><br><br>
+    </form>
+  </div>
+
+  <section id="pag2" style="display: none;" class="pag2">
+
+    <h1 id="greeting2" class="g2">
+      Selecciona un Proyecto
+    </h1><br><br> <br><br>
+
+    <div id="proyects">
+
+      <figure id="proyect1">
+        <img id="image1" src="Images/gut on a chip.jpg" alt="Imagen de un estomago formado por..." width="240"
+          height="175">
+        <figcaption>Proyecto 1</figcaption> <br>
+
+        <blockquote id="p1Text" style="display: none;">
+          <p> (El texto ha sido desplazado 5 espacios) <br> <br> CANCER ON A CHIP <br>
+            <!--Dispositivo microfluidico de
+            deteccion temprana de cancer al estomago. <br> La
+            tecnologia lab-on-a-chip permite estudiar celulas cancerigenas deribadas o tumores en una matriz celular, se
+            usa para buscar
+            alternativas de tratamiento y detectar enfermedades.-->
+            Inxutxnynat rnhwtkqzninht ij ijyjhhnts yjruwfsf ij
+            hfshjw fq jxytrflt. <br> Qf yjhstqtlnf qfg-ts-f-hmnu ujwrnyj jxyzinfw hjqzqfx hfshjwnljsfx ijwngfifx t
+            yzrtwjx js zsf rfywne hjqzqfw, xj zxf ufwf gzxhfw fqyjwsfynafx ij ywfyfrnjsyt d ijyjhyfw qf jskjwrjifijx.
+            <br>
+          </p>
+        </blockquote>
+      </figure>
+
+      <figure id="proyect2">
+        <img id="image2" src="Images/Hidrogel.jpg" alt="Imagen de un estomago formado por..." width="240" height="175">
+        <figcaption>Proyecto 2</figcaption> <br>
+
+        <blockquote id="p2Text" style="display: none;">
+          <p> (El texto no ha sido desplazado) <br> <br>
+            HIDROGEL PARA REGENERACION OSEA <br> Hidrogel a base de pectina de cacao. <br> El uso de mazorcas de cacao
+            como materia prima de hidrogeles
+            disminuye el impacto de estos residuos en el ecosistema, reduce el costo de producción de hidrogeles y
+            genera mayor acceso a terapias regenerativas. <br>
+          </p>
+        </blockquote>
+      </figure>
+
+      <figure id="proyect3">
+        <img id="image3" src="Images/biosensor.jpg" alt="Imagen de un estomago formado por..." width="240" height="175">
+        <figcaption>Proyecto 3</figcaption> <br>
+        <blockquote id="p3Text" style="display: none;">
+          <p> (El texto ha sido desplazado 5 espacios) <br> <br> BIOSENSOR <br>
+            Biosensor para detectar intoxicación por metales pesados.<br> Los biosensores a base de aptameros son
+            dispositivos de bajo costo y compactos que pueden ser
+            usados para comprobar la presencia de metales pesados en distintos medios, como el agua, la sangre y otros
+            fluidos.
+            <br>
+          </p>
+        </blockquote>
+      </figure>
+
+      <figure id="proyect4">
+        <img id="image4" src="Images/sintética.jpg" alt="Imagen de un estomago formado por..." width="240" height="175">
+        <figcaption>Proyecto 4</figcaption> <br>
+
+        <blockquote id="p4Text" style="display: none;">
+          <p> (El texto ha sido desplazado 5 espacios) <br> <br>
+            BIOLOGIA SINTETICA<br><!--
+            Diseño de Proteínas Sintéticas vegetales. <br> La tecnologia de DNA recombinante y la optimización de
+            bioprocesos con organismos recombinantes ofrece una alta gama de posibilidades para la produccion de
+            proteinas nativas o modificas o con nuevas y mejores propiedades.-->Inxjñt ij Uwtyjísfx Xnsyéynhfx
+            ajljyfqjx.  <br>  Qf yjhstqtlnf ij ISF wjhtrgnsfsyj d qf tuynrnefhnts ij gntuwthjxtx hts twlfsnxrtx wjhtrgnsfsyjx
+            tkwjhj zsf fqyf lfrf ij utxngnqnifijx ufwf qf uwtizhhnts ij uwtyjnsfx sfynafx t rtinknhfx t hts szjafx d
+            rjotwjx uwtunjifijx.<br>
+          </p>
+        </blockquote>
+      </figure>
+
+      <div id="b4" style="display: none;">
+        <br> <br>
+        <input type="button" id="btn4" value="Elige otro proyecto">
+      </div>
+    </div>
+
+    <main>
+      <form id="form2">
+
+        <label>Texto </label><br>
+        <textarea type="text" id="text1" size="40"></textarea><br><br>
+
+        <label>Desplazamiento</label><br>
+        <input type="text" id="move1" size="10" maxlength="5" required> <br> <br>
+
+        <input type="button" id="btn1" value="Cifrar"> &nbsp; &nbsp; &nbsp;
+        <input type="button" id="btn2" value="Descifrar"> <br> <br>
+
+
+        <label id="textLegend">Nuevo Texto</label>
+        <textarea id="textcod" class="fset" readonly></textarea>
+        <!--<fieldset class="fset"> //opcion2
+          <legend id="textLegend"></legend>
+          <p id="textcod"></p>
+        </fieldset> !--> <br> <br>
+
+        <input type="button" id="btn5" value="Limpiar"> &nbsp; &nbsp; &nbsp; 
+        <input type="button" id="btn3" value="Cerrar sesión">
+      </form>
+    </main>
+  </section>
+
+  <script src="index.js" type="module"></script>
+</body>
+
+<footer></footer>
+
+</html>

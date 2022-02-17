@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #334756;
+    height: 60px;
+    position: relative;
+    left:0;
+    right:0;
+    top:0;
+}
+
+body{
+    background-image: url(Images/ImgPag1D.jpg);
+    height:100%;
+    position: relative;
+}
+
+footer{
+    background-color: #334756;
+    position: relative;
+    left:0;
+    right:0;
+    bottom:0;
+    height: 60px;
+}
+
+#root{ /*primera pag, llamada por id*/
+    margin-top: 150px; /*para centrar los elemmtos del root */
+    margin-bottom: 139px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    font-family: serif;
+    color: #082032;
+}
+
+h1[class^="g"]{ /* attribute selector*/
+    font-size: 40px;
+    font-family:'Source Sans Pro';
+    font-weight: lighter;
+}
+
+#user, #pswrd{ /* input de usuario y contrasena*/
+    border: none;
+    border-bottom: 2px solid #082032;
+    height: 25px;
+    width: 350px;
+    font-size: 15px;
+    background: none;
+}
+#user:focus, #pswrd:focus, #move1:focus, #text1:focus{
+    background: #CED9E2;
+}
+.fset:hover,  #move1:hover, #text1:hover{
+    background: #CED9E2;
+}
+::placeholder { /* pseudo elemento*/
+    color: #082032;
+    font-size: 17px;
+    font-family:'Source Sans Pro';
+}
+
+#proyects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 85%;
+    text-align: justify;
+}
+
+.pag2{
+    background: linear-gradient(to bottom, #5aa7dd, #CED9E2);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 30px; /*para que hacer espacio entre el contenido y el borde*/
+    padding-bottom: 70px;
+    padding-left: 90px;
+    padding-right: 30px;
+    color:#082032;
+}
+
+textarea{
+    height: 100px;
+    width: 90%;
+    background: none;
+    text-align: justify;
+}
+
+input[id^="btn"]{ /* attribute selector*/
+    width: 120px;
+    height: 28px;
+    border-width: 1.5px;
+    border-color: #082032;
+    font-family: serif;
+    font-size: 15px;
+    background: #ABC7DB;
+    border-radius: 5px;
+}
+input[id^="btn"]:hover{
+    color: #7db7e4;
+    background: #082032;
+}
+
+#btn{
+    color: #082032;
+    border-color: #ABC7DB;
+    height: 40px;
+    font-weight: bolder;
+    font-family:'Source Sans Pro';
+    background: none;
+    background: #CED9E2;
+    opacity: 0.6;
+}
+
+#btn:hover{
+    background: #CED9E2;
+    opacity: 0.9;
+}
+
+#btn4{
+    height: 30px;
+    width: 140px;
+}
+
+#text1{ 
+    width: 90%;
+    height: 70px;
+}
+
+#move1{ 
+    height: 25px;
+    width: 25%;
+    background: none;
+}
+
+figcaption{
+    font-weight: bolder;
+    font-family:'Source Sans Pro';
+    font-size: 15px;
+}
+
+.error-text {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+  }
+
+#mensaje{
+    align-content: center;
+    width: 320px;
+    transform:translateX(302px);
+    opacity: 0.8;
+}
+/*cursor: text; para el texti
+cursor: pointer; para botones*/
