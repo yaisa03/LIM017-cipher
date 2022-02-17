@@ -1,11 +1,11 @@
 const cipher = {
 
   encode: (offset, string) => {
-    let textCod = "";
-    if (typeof string !== "string") {
+    let textCod = '';
+    if (typeof string !== 'string') {
       throw new TypeError('bad arguments');
     }
-    /* if (typeof offset !== "number") {
+    /* if (typeof offset !== 'number') {
       throw new TypeError('bad arguments');
     }*/
     for (let i = 0; i < string.length; i++) {
@@ -26,11 +26,11 @@ const cipher = {
   },
 
   decode: (offset, string) => {
-    let textDeCod = "";
-    if (typeof string !== "string") {
+    let textDeCod = '';
+    if (typeof string !== 'string') {
       throw new TypeError('bad arguments');
     }
-    /* if (typeof offset !== "number") {
+    /* if (typeof offset !== 'number') {
       throw new TypeError('bad arguments');
     }*/
     for (let i = 0; i < string.length; i++) {

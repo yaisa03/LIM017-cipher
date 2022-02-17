@@ -19,12 +19,12 @@ let contrasena = document.querySelector('#pswrd');
 icon.addEventListener('click', () => {
     icon2.style.display = '';
     icon.style.display = 'none';
-    contrasena.type = "text";
+    contrasena.type = 'text';
 });
 icon2.addEventListener('click', () => {
     icon2.style.display = 'none';
     icon.style.display = '';
-    contrasena.type = "password";
+    contrasena.type = 'password';
 });
 
 let login = {
@@ -35,14 +35,14 @@ console.log(Object.keys(login.users).length);
 btn.addEventListener('click', () => { //Acceder //addEventListener(evento, funcion)
     let message = document.getElementById('mensaje');
     for (let i = 0; i < Object.keys(login.users).length; i++) {
-        if (user.value == "") {
+        if (user.value == '') {
             message.innerText = 'por favor ingresa tu usuario';
             message.classList.add('error-text');
-        } else if (pswrd.value == "") {
+        } else if (pswrd.value == '') {
             message.innerText = 'por favor ingresa tu contraseña';
             message.classList.add('error-text');
         }else{
-            message.innerText = 'el usuario y/o contrasena no son correctos';
+            message.innerText = 'el usuario y/o contraseña son incorrectos';
             message.classList.add('error-text');
         }
         if (user.value == login.users[i] && pswrd.value == login.passwords[i]) {
@@ -59,22 +59,22 @@ btn1.addEventListener('click', () => {  //Codificar
     let string = document.getElementById('text1').value;
     let offset = document.getElementById('move1').value;
     let textCod = cipher.encode(offset, string);
-    document.getElementById("textcod").innerText = textCod;
-    document.getElementById("textLegend").innerText = " Texto Cifrado";
+    document.getElementById('textcod').innerText = textCod;
+    document.getElementById('textLegend').innerText = ' Texto Cifrado';
 });
 
 btn2.addEventListener('click', () => { //Decodificar
     let string = document.getElementById('text1').value;
     let offset = document.getElementById('move1').value;
     let textDeCod = cipher.decode(offset, string);
-    document.getElementById("textcod").innerText = textDeCod;
-    document.getElementById("textLegend").innerText = " Texto Descifrado ";
+    document.getElementById('textcod').innerText = textDeCod;
+    document.getElementById('textLegend').innerText = ' Texto Descifrado ';
 });
 
 btn5.addEventListener('click', () => { //limpiar datos de codificar y decodificar
     document.getElementById('form2').reset();
-    document.getElementById("textLegend").innerText = " Nuevo Texto ";
-    document.getElementById("textcod").innerText = "";
+    document.getElementById('textLegend').innerText = ' Nuevo Texto ';
+    document.getElementById('textcod').innerText = '';
 })
 
 btn4.addEventListener('click', () => { //Elige otro proyecto
@@ -84,7 +84,7 @@ btn4.addEventListener('click', () => { //Elige otro proyecto
     b4.style.display = 'none';
     const proyect = document.querySelectorAll('figure');
     for (let i = 0; i < proyect.length; i++) {
-        proyect[i].style.display = "";
+        proyect[i].style.display = '';
     }
     const texts = document.querySelectorAll('blockquote');
     for (let i = 0; i < texts.length; i++) {
@@ -101,12 +101,12 @@ btn3.addEventListener('click', () => { //cerrar sesion
     b4.style.display = 'none';
     document.getElementById('form1').reset();
     document.getElementById('form2').reset();
-    document.getElementById("textcod").innerText = "";
+    document.getElementById('textcod').innerText = '';
     let pView = document.getElementById('proyects');
     pView.style.display = 'grid';
     const proyect = document.querySelectorAll('figure'); //usar funcion porque da una lista estatica
     for (let i = 0; i < proyect.length; i++) {
-        proyect[i].style.display = "";
+        proyect[i].style.display = '';
     }
     const texts = document.querySelectorAll('blockquote');
     for (let i = 0; i < texts.length; i++) {

@@ -145,9 +145,13 @@ figcaption{
     color: rgb(0, 0, 0);
     font-weight: bolder;
   }
+
 #mensaje{
     align-content: center;
     width: 320px;
     transform:translateX(302px);
     opacity: 0.8;
 }
+
+/*cursor: text; para el texto
+cursor: pointer; para botones*/
