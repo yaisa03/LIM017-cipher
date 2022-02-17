@@ -14,25 +14,25 @@ let image2 = document.getElementById('image2');
 let image4 = document.getElementById('image4');
 let icon = document.querySelector('#eye');
 let icon2 = document.querySelector('#eyeslash');
-let contrasena = document.querySelector('#pswrd');
+let password2 = document.querySelector('#pswrd');
 
 icon.addEventListener('click', () => {
     icon2.style.display = '';
     icon.style.display = 'none';
-    contrasena.type = 'text';
+    password2.type = 'text';
 });
 
 icon2.addEventListener('click', () => {
     icon2.style.display = 'none';
     icon.style.display = '';
-    contrasena.type = 'password';
+    password2.type = 'password';
 });
 
 let login = {
     users: ['usuario0','usuario1', 'usuario2', 'usuario3','usuario4'],
     passwords: ['contrasena0','contrasena1', 'contrasena2','contrasena3','contrasena4']
 };
-console.log(Object.keys(login.users).length);
+//console.log(Object.keys(login.users).length);
 btn.addEventListener('click', () => { //Acceder //addEventListener(evento, funcion)
     let message = document.getElementById('mensaje');
     for (let i = 0; i < Object.keys(login.users).length; i++) {
