@@ -111,7 +111,7 @@ Un día antes de que cierre el segundo sprint se recibio feedback de compañeras
 
 ![vista pág1 de la web](imagesREADME/pag1.jpg)
 
-![vista pág2 de la web](imagesREADME/pag2.jpg)
+![vista pág2 de la web](imagesREADME/pag2.png)
 
 
 
