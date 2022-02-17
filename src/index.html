@@ -2,49 +2,49 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset='utf-8'>
   <title>Caesar Cipher</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='style.css' />
+  <link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
 </head>
 
 <header></header>
 
 <body>
 
-  <div id="root">
-    <h1 id="greeting1" class="g1">
+  <div id='pag1'>
+    <h1 id='greeting1' class='g1'>
       Inicia sesión </h1> <br><br>
 
-    <form class="form1" id="form1">
-      <input type="text" placeholder=" Usuario" id="user"> <br><br>
+    <form class='form1' id='form1'>
+      <input type='text' placeholder=' Usuario' id='user'> <br><br>
 
       <div>
-        <input type="password" placeholder=" Contraseña" id="pswrd" style="transform:translateX(10px)" required>
-        <i id="eye" class="fa fa-eye" style="transform:translateX(-15px)"></i>
-        <i id="eyeslash" class="fa fa-eye-slash" style="display: none;transform:translateX(-15px)"></i>
+        <input type='password' placeholder=' Contraseña' id='pswrd' style='transform:translateX(10px)' required>
+        <i id='eye' class='fa fa-eye' style='transform:translateX(-15px)'></i>
+        <i id='eyeslash' class='fa fa-eye-slash' style='display: none;transform:translateX(-15px)'></i>
         <br> <br>
-        <p id="mensaje"></p> <br>
+        <p id='mensaje'></p> <br>
       </div>
 
-      <input type="button" id="btn" value="Acceder"><br><br>
+      <input type='button' id='btn' value='Acceder'><br><br>
     </form>
   </div>
 
-  <section id="pag2" style="display: none;" class="pag2">
+  <section id='pag2' style='display: none;' class='pag2'>
 
-    <h1 id="greeting2" class="g2">
+    <h1>
       Selecciona un Proyecto
     </h1><br><br> <br><br>
 
-    <div id="proyects">
+    <div id='proyects'>
 
-      <figure id="proyect1">
-        <img id="image1" src="Images/gut on a chip.jpg" alt="Imagen de un estomago formado por..." width="240"
-          height="175">
+      <figure id='proyect1'>
+        <img id='image1' src='Images/gut on a chip.jpg' alt='Imagen de un dispositivo microfuidico sostenido por una mano, la mano lleva un guante celete' width='240'
+          height='175'>
         <figcaption>Proyecto 1</figcaption> <br>
 
-        <blockquote id="p1Text" style="display: none;">
+        <blockquote id='proyect1text' style='display: none;'>
           <p> (El texto ha sido desplazado 5 espacios) <br> <br> CANCER ON A CHIP <br>
             <!--Dispositivo microfluidico de
             deteccion temprana de cancer al estomago. <br> La
@@ -59,11 +59,11 @@
         </blockquote>
       </figure>
 
-      <figure id="proyect2">
-        <img id="image2" src="Images/Hidrogel.jpg" alt="Imagen de un estomago formado por..." width="240" height="175">
+      <figure id='proyect2'>
+        <img id='image2' src='Images/Hidrogel.jpg' alt='Imagen de un hueso artificial en un placa petri, una jeringa coloca un liquido rojizo sobre el hueso' width='240' height='175'>
         <figcaption>Proyecto 2</figcaption> <br>
 
-        <blockquote id="p2Text" style="display: none;">
+        <blockquote id='proyect2text' style='display: none;'>
           <p> (El texto no ha sido desplazado) <br> <br>
             HIDROGEL PARA REGENERACION OSEA <br> Hidrogel a base de pectina de cacao. <br> El uso de mazorcas de cacao
             como materia prima de hidrogeles
@@ -73,10 +73,10 @@
         </blockquote>
       </figure>
 
-      <figure id="proyect3">
-        <img id="image3" src="Images/biosensor.jpg" alt="Imagen de un estomago formado por..." width="240" height="175">
+      <figure id='proyect3'>
+        <img id='image3' src='Images/biosensor.jpg' alt='Imagen de unbiosensor transparente sostenido por pinzas' width='240' height='175'>
         <figcaption>Proyecto 3</figcaption> <br>
-        <blockquote id="p3Text" style="display: none;">
+        <blockquote id='proyect3text' style='display: none;'>
           <p> (El texto no ha sido desplazado) <br> <br> BIOSENSOR <br>
             Biosensor para detectar intoxicación por metales pesados.<br> Los biosensores a base de aptameros son
             dispositivos de bajo costo y compactos que pueden ser
@@ -87,11 +87,11 @@
         </blockquote>
       </figure>
 
-      <figure id="proyect4">
-        <img id="image4" src="Images/sintética.jpg" alt="Imagen de un estomago formado por..." width="240" height="175">
+      <figure id='proyect4'>
+        <img id='image4' src='Images/sintética.jpg' alt='Imagen de moleculas de colore azul y dorado' width='240' height='175'>
         <figcaption>Proyecto 4</figcaption> <br>
 
-        <blockquote id="p4Text" style="display: none;">
+        <blockquote id='proyect4text' style='display: none;'>
           <p> (El texto ha sido desplazado 5 espacios) <br> <br>
             BIOLOGIA SINTETICA<br><!--
             Diseño de Proteínas Sintéticas vegetales. <br> La tecnologia de DNA recombinante y la optimización de
@@ -104,35 +104,35 @@
         </blockquote>
       </figure>
 
-      <div id="b4" style="display: none;">
+      <div id='button4' style='display: none;'>
         <br> <br>
-        <input type="button" id="btn4" value="Elige otro proyecto">
+        <input type='button' id='btn4' value='Elige otro proyecto'>
       </div>
     </div>
 
     <main>
-      <form id="form2">
+      <form id='form2'>
 
         <label>Texto </label><br>
-        <textarea type="text" id="text1" size="40"></textarea><br><br> <!--el textarea si ajusta el texto-->
+        <textarea type='text' id='text' size='40'></textarea><br><br> <!--el textarea si ajusta el texto-->
 
         <label>Desplazamiento</label><br>
-        <input type="text" id="move1" size="10" maxlength="5" required> <br> <br>
+        <input type='text' id='offset' size='10' maxlength='5' required> <br> <br>
 
-        <input type="button" id="btn1" value="Cifrar"> &nbsp; &nbsp; &nbsp;
-        <input type="button" id="btn2" value="Descifrar"> <br> <br>
+        <input type='button' id='btn1' value='Cifrar'> &nbsp; &nbsp; &nbsp;
+        <input type='button' id='btn2' value='Descifrar'> <br> <br>
 
 
-        <label id="textLegend">Nuevo Texto</label>
-        <textarea id="textcod" class="fset" readonly></textarea><br> <br>
+        <label id='textLegend'>Nuevo Texto</label>
+        <textarea id='textcod' class='fset' readonly></textarea><br> <br>
 
-        <input type="button" id="btn5" value="Limpiar"> &nbsp; &nbsp; &nbsp; 
-        <input type="button" id="btn3" value="Cerrar sesión">
+        <input type='button' id='btn5' value='Limpiar'> &nbsp; &nbsp; &nbsp; 
+        <input type='button' id='btn3' value='Cerrar sesión'>
       </form>
     </main>
   </section>
 
-  <script src="index.js" type="module"></script>
+  <script src='index.js' type='module'></script>
 </body>
 
 <footer></footer>

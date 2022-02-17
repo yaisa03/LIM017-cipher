@@ -27,7 +27,7 @@ footer{
     height: 60px;
 }
 
-#root{ /*primera pag, llamada por id*/
+#pag1{ /*primera pag, llamada por id*/
     margin-top: 150px; /*para centrar los elemmtos del root */
     margin-bottom: 139px;
     margin-left: 200px;
@@ -51,10 +51,10 @@ h1[class^="g"]{ /* attribute selector*/
     font-size: 15px;
     background: none;
 }
-#user:focus, #pswrd:focus, #move1:focus, #text1:focus{
+#user:focus, #pswrd:focus, #offset:focus, #text:focus{
     background: #CED9E2;
 }
-.fset:hover,  #move1:hover, #text1:hover{
+.fset:hover,  #offset:hover, #text:hover{
     background: #CED9E2;
 }
 ::placeholder { /* pseudo elemento*/
@@ -124,12 +124,12 @@ input[id^="btn"]:hover{
     width: 140px;
 }
 
-#text1{ 
+#text{ 
     width: 90%;
     height: 70px;
 }
 
-#move1{ 
+#offset{ 
     height: 25px;
     width: 25%;
     background: none;
