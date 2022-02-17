@@ -21,6 +21,7 @@ icon.addEventListener('click', () => {
     icon.style.display = 'none';
     contrasena.type = 'text';
 });
+
 icon2.addEventListener('click', () => {
     icon2.style.display = 'none';
     icon.style.display = '';

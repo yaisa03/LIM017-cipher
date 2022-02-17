@@ -28,19 +28,19 @@ Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
 
 ## Resumen del proyecto
 
-En este proyecto se creo una aplicación web que permite al usuario
+En este proyecto se creó una aplicación web que permite al usuario
 pueda cifrar y descifrar un texto indicando un desplazamiento específico de
 caracteres.
-
-La temática de este proyecto es una web de uso interno para un centro de investigación, este programa permite a los cientificos de la institucion compartir de manera segura los proyectos en proceso con otros equipos, hasta que sus avances y datos esten listos para ser publicados.
+ 
+La temática de este proyecto es una web de uso interno para un centro de investigación, este programa permite a los científicos de la institución compartir de manera segura los proyectos en proceso con otros equipos, hasta que sus avances y datos estén listos para ser publicados.
 
 
 ## Propuesta
 
 ## Primera Propuesta
-* En la idea inicial se planteo que los usuarios sean profesores que dictan clases online, la aplicación web les permitiria encriptar expedientes de alumnos a los que enseñaron previamente y tener acceso a la historia de los alumnos a los que les tocara enseñar.
+* En la idea inicial se planteó que los usuarios sean profesores que dictan clases online, la aplicación web les permitirá encriptar expedientes de alumnos a los que enseñaron previamente y tener acceso a la historia de los alumnos a los que les tocará enseñar.
 ### Boceto
-* Inicialmente se realizo un prototipo a mano, planteando dos páginas: una de inicio de sesión y otra que donde se realiza el descifrado/cifrado.
+* Inicialmente se realizó un prototipo a mano, planteando dos páginas: una de inicio de sesión y otra donde se realiza el descifrado/cifrado.
 * Boceto a mano
 
 ![primer boceto a mano](imagesREADME/aMano.jpg)
@@ -48,30 +48,30 @@ La temática de este proyecto es una web de uso interno para un centro de invest
 
 ![primer boceto en figma](imagesREADME/Figma.jpg)
 ### Feedback
-* En base al feedback obtenido de profesores universitarios y profesores de centros de idiomas, se cambio la propuesta debido a que esta tenia muchas similaridades a los sistemas intranet que ellos usan y no parecia se un tema muy interante.
-
-
+* En base al feedback obtenido de profesores universitarios y profesores de centros de idiomas, se cambió la propuesta debido a que esta tenía muchas similaridades a los sistemas intranet que ellos usan y no parecía ser un tema muy interesante.
+ 
+ 
 ## Segunda Propuesta
-* Para la segunda propuesta se plantea proteger la información de un centro de investigación donde cientificos se encuentran trabajando en proyectos en simultaneo, esta app web permite que dentro del centro se pueda compartir la información de manera mas segura, manteniendo un registro de quien accede a esta.
-* Este proyecto puede ayudar en la protección de datos de investigación, en especial durante la revisión de pares, puede prevenir el robo del manuscrito, la manipulación de contenidos y robo de autoría.
+* Para la segunda propuesta se plantea proteger la información de un centro de investigación donde científicos se encuentran trabajando en proyectos en simultáneo, esta app web permite que dentro del centro se pueda compartir la información de manera más segura, manteniendo un registro de quien accede a esta.
+* Este proyecto puede ayudar en la protección de datos de investigación, en especial durante la revisión de pares, puede prevenir el robo del manuscrito, la manipulación de contenidos y el robo de autoría.
 ### Boceto
-* Para este prototipo se mantuvieron las páginas, pero se modifico el layout de la pagina 2 para que sea mas amigable con el usuario (menos cajas de texto, menos alerts y mas botones).
+* Para este prototipo se mantuvieron las páginas, pero se modificó el layout de la página 2 para que sea más amigable con el usuario (menos cajas de texto, menos alerts y más botones).
 * Prototipo en [Figma](https://www.figma.com/file/lGrRPxW8fWKQTZM4QYeD5z/Prototipo-cipher-2?node-id=0%3A1)
 
 ![primer boceto en figma](imagesREADME/Figma1.jpg)
 
 ## Desarrollo
-Teniendo el primer boceto en Figma finalizado, se realizo la estructura de la primera página en HTML con un formulario, un diseno basico en CSS y el addEventListener JavaScript que permitiera acceder a la siguiente página; despues de estudiar mas de HTML semantico, CSS selectors y box type, se lograron corregir problemas en dimensiones, centrary fijar elementos.
-Para la página 2, se realizo la estructura basica en HTML y CSS, en JavaScript se hicieron los addEventListener para la limpieza de formularios y se editaron algunas cosas en base al DOM JS.
-Una vez la estructura basica de la página web fue completada, se procedio a trabajar en la funcion encode y decode para letras mayúsculas. Al probar estas funciones, la encode solo encriptaba correctamente la primera letra de las palabras, gracias a la colaboracion con otras compañeras se logro resolver este problema al colocarle un parseInt al offset. Se corrieron las pruebas unitarias por primera vez.
-Ademas, se edito el diseño de la página 2: 
-- Se agregaron las imagenes y textos de los proyectos.
-- Se redujo la cantidad de text inputs a una caja que recibe el string, una que recibe el offset y un text area donde aparecera el resultado.
+Teniendo el primer boceto en Figma finalizado, se realizó la estructura de la primera página en HTML con un formulario, un diseño básico en CSS y el addEventListener JavaScript que permitiera acceder a la siguiente página; después de estudiar más de HTML semántico, CSS selectors y box type, se lograron corregir problemas en dimensiones, centrar y fijar elementos.
+Para la página 2, se realizó la estructura básica en HTML y CSS, en JavaScript se hicieron los addEventListener para la limpieza de formularios y se editaron algunas cosas en base al DOM JS.
+Una vez la estructura básica de la página web fue completada, se procedió a trabajar en la función encode y decode para letras mayúsculas. Al probar estas funciones, la encode solo encriptaba correctamente la primera letra de las palabras, gracias a la colaboración con otras compañeras se logró resolver este problema al colocarle un parseInt al offset. Se corrieron las pruebas unitarias por primera vez.
+Además, se editó el diseño de la página 2:
+- Se agregaron las imágenes y textos de los proyectos.
+- Se redujo la cantidad de text inputs a una caja que recibe el string, una que recibe el offset y un textarea donde aparecerá el resultado.
 - Se agregaron los botones 'limpiar' y 'Elige otro proyecto'.
 
-Luego se editaron las funciones para que acepten letras minúsculas, con este caso hubo un problema al definir la función decode, pero nuevamente se logro resolver al colaborar con compañeras que se encontraban realizando el mismo proyecto. Se procedio a hacer que las funciones acepten otros tipos de caracteres.
-Para las pruebas unitarias, el tercer TypeError pudo ser corregido al hacer una condicion que verificara que el valor de la variable 'string' es un String.
-Un dia antes de que cierre el segundo sprint se recibio feedback de compañeras, lo cual fue muy util para editar el diseno en CSS y decidir entregar el proyecto.
+Luego se editaron las funciones para que acepten letras minúsculas, con este caso hubo un problema al definir la función decode, pero nuevamente se logró resolver al colaborar con compañeras que se encontraban realizando el mismo proyecto. Se procedió a hacer que las funciones aceptaran otros tipos de caracteres.
+Para las pruebas unitarias, el tercer TypeError pudo ser corregido al hacer una condición que verifica que el valor de la variable 'string' es un String.
+Un día antes de que cierre el segundo sprint se recibio feedback de compañeras, lo cual fue muy útil para editar el diseño en CSS y decidir entregar el proyecto.
 
 ## Flujo de desarrollo del proyecto
 
@@ -97,7 +97,7 @@ Un dia antes de que cierre el segundo sprint se recibio feedback de compañeras,
 
 ## Instrucciones
 
-1. Inicia Sesión en el sistema. Donde user=usuario[i], contraseña=contrasena[i], i=0:4.
+1. Inicia Sesión en el sistema. Para ingresar a la plataforma el usuario debera ingresar con las siguientes credenciales: el user es usuario1 y la contraseña es contrasena1, el numero al final puede ser reeplazado por 0,2,3 o 4.
 2. Selecciona un proyecto, la información de algunos estara enciptada y de otros no.
 3. Ingresa el mensaje en el cuadro de texto. Este, permite ingresar mayúsculas, minúsculas, carácteres especiales, de puntuación y los espacios estan permitidos. 
 4. Ingresa el número de caracteres que deseas desplazar el texto.
