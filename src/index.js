@@ -32,7 +32,7 @@ let login = {
     users: ['usuario0','usuario1', 'usuario2', 'usuario3','usuario4'],
     passwords: ['contrasena0','contrasena1', 'contrasena2','contrasena3','contrasena4']
 };
-//console.log(Object.keys(login.users).length);
+//console.log(Object.keys(login.users).length); //ver cuantos ele
 btn.addEventListener('click', () => { //Acceder //addEventListener(evento, funcion)
     const message = document.getElementById('mensaje');
     for (let i = 0; i < Object.keys(login.users).length; i++) {
@@ -42,7 +42,7 @@ btn.addEventListener('click', () => { //Acceder //addEventListener(evento, funci
         } else if (pswrd.value == '') {
             message.innerText = 'por favor ingresa tu contraseña';
             message.classList.add('error-text');
-        }else{
+        } else {
             message.innerText = 'el usuario y/o contraseña son incorrectos';
             message.classList.add('error-text');
         }
@@ -123,9 +123,9 @@ image1.addEventListener('click', () => {
     proyects.style.display = 'inline';
     const proyect1text = document.getElementById('proyect1text'); //mostrar texto del proyecto
     proyect1text.style.display = '';
-    const button4 = document.getElementById('button4');
+    const button4 = document.getElementById('button4'); //mostrar boton "elige otro proyecto"
     button4.style.display = '';
-    const proyect2 = document.getElementById('proyect2');
+    const proyect2 = document.getElementById('proyect2'); //ocultar proyectos no selecciondos
     proyect2.style.display = 'none';
     const proyect3 = document.getElementById('proyect3');
     proyect3.style.display = 'none';

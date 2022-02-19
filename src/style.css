@@ -36,6 +36,10 @@ footer{
     font-family: serif;
     color: #082032;
 }
+#eye, #eyeslash{
+    width: 25px;
+    height: 25px;
+}
 
 h1[class^="g"]{ /* attribute selector*/
     font-size: 40px;

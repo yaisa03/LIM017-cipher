@@ -4,32 +4,31 @@
 <head>
   <meta charset='utf-8'>
   <title>Caesar Cipher</title>
-  <link rel='stylesheet' href='style.css' />
-  <link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='style.css'/>
 </head>
 
 <header></header>
 
 <body>
 
-  <div id='pag1'>
+  <section id='pag1'>
     <h1 id='greeting1' class='g1'>
       Inicia sesión </h1> <br><br>
 
     <form class='form1' id='form1'>
       <input type='text' placeholder=' Usuario' id='user'> <br><br>
 
-      <div>
-        <input type='password' placeholder=' Contraseña' id='pswrd' style='transform:translateX(10px)' required>
-        <i id='eye' class='fa fa-eye' style='transform:translateX(-15px)'></i>
-        <i id='eyeslash' class='fa fa-eye-slash' style='display: none;transform:translateX(-15px)'></i>
+      <div> <!--inline style mayor especificidad-->
+        <input type='password' placeholder=' Contraseña' id='pswrd' style='transform:translateX(15px)' required>
+        <img id='eye' src="Images/eye.png" style='transform:translate(-17px,7px)'> 
+        <img id='eyeslash' src="Images/eyeslash.png" style='display: none;transform:translate(-17px,7px)'>
         <br> <br>
         <p id='mensaje'></p> <br>
       </div>
 
       <input type='button' id='btn' value='Acceder'><br><br>
     </form>
-  </div>
+  </section>
 
   <section id='pag2' style='display: none;' class='pag2'>
 

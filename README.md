@@ -7,7 +7,7 @@
 * [Propuesta](#propuesta)
 * [Desarrollo](#desarrollo)
 * [Flujo de desarrollo del proyecto](#flujo-de-desarrollo-del-proyecto)
-* [Instrucciones](#instrucciones)
+* [Instrucciones de uso](#instrucciones-de-uso)
 * [Checklist](#checklist)
 
 ***
@@ -41,7 +41,7 @@ La temática de este proyecto es una web de uso interno para un centro de invest
 * En la idea inicial se planteó que los usuarios sean profesores que dictan clases online, la aplicación web les permitirá encriptar expedientes de alumnos a los que enseñaron previamente y tener acceso a la historia de los alumnos a los que les tocará enseñar.
 ### Boceto
 * Inicialmente se realizó un prototipo a mano, planteando dos páginas: una de inicio de sesión y otra donde se realiza el descifrado/cifrado.
-* Boceto a mano
+* Boceto a mano alzada
 
 ![primer boceto a mano](imagesREADME/aMano.jpg)
 * Boceto en [Figma](https://www.figma.com/file/6tJYVg6wbCUEgQ0mnadUFH/Prototipo-cipher-1?node-id=0%3A1)
@@ -82,8 +82,8 @@ Un día antes de que cierre el segundo sprint se recibio feedback de compañeras
 * Creación de la estructura de la página 2: HTML, JS y CSS.
 * Empezar funcion encode.
 * Cambio de usuario y tematica.
-* Cambio de diseno: Nuevo boceto en Figma.
-* Edicion de la pag 2 en base al nuevo diseño.
+* Cambio de diseño: Nuevo boceto en Figma.
+* Edición de la pag 2 en base al nuevo diseño.
 * Completar las funciones encode y decode.
 * Correr tests y corregir los TypeError.
 * Detalles finales en CSS.
@@ -95,9 +95,9 @@ Un día antes de que cierre el segundo sprint se recibio feedback de compañeras
 
 
 
-## Instrucciones
+## Instrucciones de uso
 
-1. Inicia Sesión en el sistema. Para ingresar a la plataforma el usuario debera ingresar con las siguientes credenciales: el user es usuario1 y la contraseña es contrasena1, el numero al final puede ser reeplazado por 0,2,3 o 4.
+1. Inicia Sesión en el sistema. Para ingresar a la plataforma el usuario debera ingresar con las siguientes credenciales: el user es **usuario1** y la contraseña es **contrasena1**, el numero al final puede ser reeplazado por 0,2,3 o 4.
 2. Selecciona un proyecto, la información de algunos estara enciptada y de otros no.
 3. Ingresa el mensaje en el cuadro de texto. Este, permite ingresar mayúsculas, minúsculas, carácteres especiales, de puntuación y los espacios estan permitidos. 
 4. Ingresa el número de caracteres que deseas desplazar el texto.
@@ -111,7 +111,13 @@ Un día antes de que cierre el segundo sprint se recibio feedback de compañeras
 
 ![vista pág1 de la web](imagesREADME/pag1.jpg)
 
+![vista pág1 de la web](imagesREADME/pag1-vista2.png)
+
+![vista pág1 de la web](imagesREADME/pag1-vista3.png)
+
 ![vista pág2 de la web](imagesREADME/pag2.png)
+
+![vista pág2 de la web](imagesREADME/pag2-vista2.png)
 
 
 
