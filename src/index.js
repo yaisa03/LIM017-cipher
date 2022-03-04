@@ -15,6 +15,7 @@ const image4 = document.getElementById('image4');
 const icon = document.querySelector('#eye');
 const icon2 = document.querySelector('#eyeslash');
 const password2 = document.querySelector('#pswrd');
+const arrow = document.getElementById('change');
 
 icon.addEventListener('click', () => {
     icon2.style.display = '';
@@ -61,7 +62,7 @@ btn1.addEventListener('click', () => {  //Codificar
     const offset = document.getElementById('offset').value;
     const textCod = cipher.encode(offset, string);
     document.getElementById('textcod').innerText = textCod;
-    document.getElementById('textLegend').innerText = ' Texto Cifrado';
+    //document.getElementById('textLegend').innerText = ' Texto Cifrado';
 });
 
 btn2.addEventListener('click', () => { //Decodificar
@@ -69,7 +70,7 @@ btn2.addEventListener('click', () => { //Decodificar
     const offset = document.getElementById('offset').value;
     const textDeCod = cipher.decode(offset, string);
     document.getElementById('textcod').innerText = textDeCod;
-    document.getElementById('textLegend').innerText = ' Texto Descifrado ';
+    //document.getElementById('textLegend').innerText = ' Texto Descifrado ';
 });
 
 btn3.addEventListener('click', () => { //cerrar sesion
@@ -114,8 +115,14 @@ btn4.addEventListener('click', () => { //Elige otro proyecto
 
 btn5.addEventListener('click', () => { //limpiar datos de codificar y decodificar
     document.getElementById('form2').reset();
-    document.getElementById('textLegend').innerText = ' Nuevo Texto ';
+    //document.getElementById('textLegend').innerText = ' Nuevo Texto ';
     document.getElementById('textcod').innerText = '';
+});
+
+arrow.addEventListener('click',()=>{
+    const newText = document.getElementById('textcod').value;
+    document.getElementById('text').value = newText ;
+    document.getElementById('textcod').innerHTML='';
 });
 
 image1.addEventListener('click', () => {
@@ -150,7 +157,7 @@ image2.addEventListener('click', () => {
 
 image3.addEventListener('click', () => {
     const proyects = document.getElementById('proyects');
-    proyects.style.display = 'inline';
+    proyects.style.display = 'block';
     const proyect3text = document.getElementById('proyect3text'); //mostrar texto del proyecto
     proyect3text.style.display = '';
     const button4 = document.getElementById('button4');

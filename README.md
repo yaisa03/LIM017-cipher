@@ -99,7 +99,7 @@ Un día antes de que cierre el segundo sprint se recibio feedback de compañeras
 
 1. Inicia Sesión en el sistema. Para ingresar a la plataforma el usuario debera ingresar con las siguientes credenciales: el user es **usuario1** y la contraseña es **contrasena1**, el numero al final puede ser reeplazado por 0,2,3 o 4.
 2. Selecciona un proyecto, la información de algunos estara enciptada y de otros no.
-3. Ingresa el mensaje en el cuadro de texto. Este, permite ingresar mayúsculas, minúsculas, carácteres especiales, de puntuación y los espacios estan permitidos. 
+3. Ingresa el mensaje en el cuadro de texto. Este, permite cifrar mayúsculas, minúsculas y algunos carácteres especiales. 
 4. Ingresa el número de caracteres que deseas desplazar el texto.
 5. Elige una opción dependiendo de si quieres cifrar o descifrar un mensaje. 
 6. El resultado cifrado/descifrado aparecera en el cuadro de texto.
@@ -147,5 +147,5 @@ Un día antes de que cierre el segundo sprint se recibio feedback de compañeras
 ### Parte Opcional: "Hacker edition"
 
 * [x] Cifra/descifra minúsculas
-* [x] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
+* [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
 * [ ] Permite usar un `offset` negativo.
