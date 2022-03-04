@@ -132,13 +132,23 @@ input[id^="btn"]:hover, #change:hover{
     background: #CED9E2;
     opacity: 0.6;
 }
-#btn:hover{
+#btn:hover, #btn6:hover{
     background: #CED9E2;
     opacity: 0.9;
 }
 #btn4{
     height: 30px;
     width: 140px;
+}
+#btn6{
+    color: #082032;
+    border-color: #ABC7DB;
+    background: #CED9E2;
+    width: 150px;
+    height: 30px;
+    margin-top: 15px;
+    font-weight: bold;
+    opacity: 0.6;
 }
 #offset{ 
     height: 30px;
@@ -158,6 +168,10 @@ figcaption{
 #mensaje{
     width: 320px;
     opacity: 0.8;
+    margin-bottom: 10px;
+}textarea{
+    padding:4% ;
 }
+
 /*cursor: text; para el texto
 cursor: pointer; para botones*/

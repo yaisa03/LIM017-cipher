@@ -8,6 +8,7 @@ const btn2 = document.getElementById('btn2');
 const btn3 = document.getElementById('btn3');
 const btn4 = document.getElementById('btn4');
 const btn5 = document.getElementById('btn5');
+const btn6 = document.getElementById('btn6');
 const image1 = document.getElementById('image1');
 const image3 = document.getElementById('image3');
 const image2 = document.getElementById('image2');
@@ -30,8 +31,8 @@ icon2.addEventListener('click', () => {
 });
 
 let login = {
-    users: ['usuario0','usuario1', 'usuario2', 'usuario3','usuario4'],
-    passwords: ['contrasena0','contrasena1', 'contrasena2','contrasena3','contrasena4']
+    users: ['usuario0', 'usuario1', 'usuario2', 'usuario3', 'usuario4'],
+    passwords: ['contrasena0', 'contrasena1', 'contrasena2', 'contrasena3', 'contrasena4']
 };
 //console.log(Object.keys(login.users).length); //ver cuantos ele
 btn.addEventListener('click', () => { //Acceder //addEventListener(evento, funcion)
@@ -52,7 +53,7 @@ btn.addEventListener('click', () => { //Acceder //addEventListener(evento, funci
             div.style.display = '';
             const div2 = document.getElementById('pag1'); //ocultar pag1 con display
             div2.style.display = 'none';
-            message.innerText='';
+            message.innerText = '';
         }
     }
 });
@@ -66,7 +67,7 @@ btn1.addEventListener('click', () => {  //Codificar
 });
 
 btn2.addEventListener('click', () => { //Decodificar
-    const string = document.getElementById('text').value; 
+    const string = document.getElementById('text').value;
     const offset = document.getElementById('offset').value;
     const textDeCod = cipher.decode(offset, string);
     document.getElementById('textcod').innerText = textDeCod;
@@ -95,7 +96,7 @@ btn3.addEventListener('click', () => { //cerrar sesion
     }
     icon2.style.display = 'none';
     icon.style.display = '';
-    document.getElementById('mensaje').innerText='';
+    document.getElementById('mensaje').innerText = '';
 });
 
 btn4.addEventListener('click', () => { //Elige otro proyecto
@@ -118,11 +119,19 @@ btn5.addEventListener('click', () => { //limpiar datos de codificar y decodifica
     //document.getElementById('textLegend').innerText = ' Nuevo Texto ';
     document.getElementById('textcod').innerText = '';
 });
+btn6.addEventListener('click', () => {
+    const div = document.getElementById('pag2'); //mostrar pag2 con display
+    div.style.display = '';
+    const div2 = document.getElementById('pag1'); //ocultar pag1 con display
+    div2.style.display = 'none';
+    const message = document.getElementById('mensaje');
+    message.innerText = '';
+})
 
-arrow.addEventListener('click',()=>{
+arrow.addEventListener('click', () => {
     const newText = document.getElementById('textcod').value;
-    document.getElementById('text').value = newText ;
-    document.getElementById('textcod').innerHTML='';
+    document.getElementById('text').value = newText;
+    document.getElementById('textcod').innerHTML = '';
 });
 
 image1.addEventListener('click', () => {
